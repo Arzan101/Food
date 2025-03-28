@@ -4,7 +4,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  .nav a {
+  .link {
     text-decoration: none;
     color: #ddd6cb;
     font-weight: bold;
@@ -12,8 +12,8 @@
     border-radius: 0.5rem;
   }
   
-  .nav a:hover,
-  .nav a:active {
+  .link:hover,
+  .link:active {
     background: linear-gradient(90deg, #ff8a05, #f9b331);
     background-clip: text;
     -webkit-background-clip: text;
