@@ -1,5 +1,10 @@
+import classes from './page.module.css'
+
 export default function MealsDetailsPage(){
     return(
-        <h1>Meals details</h1>
+        <>
+        <header></header>
+        <main></main>
+        </>
     )
 }
