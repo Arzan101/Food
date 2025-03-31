@@ -8,6 +8,6 @@ export async function getMeals(){
     return db.prepare('SELECT * FROM  meals').all();
 }
 
-export async function getMeal(slug){
+export function getMeal(slug){
     return db.prepare('SELECT * FROM meals WHERE slug = ?').get(slug)
 }
