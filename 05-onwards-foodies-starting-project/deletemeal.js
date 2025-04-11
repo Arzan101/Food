@@ -2,15 +2,12 @@ import sqlite3 from 'better-sqlite3';
 
 const db = sqlite3('meals.db');
 
-// List all test meal titles you want to remove
+// These are the exact titles you want to delete:
 const titlesToDelete = [
-  'aaaaaaaaaaaaaa',
-  'azzu',
-  'rrrrr',
-  'eeeeeeeee',
-  'qqqqqqq',
-  'pppppppppppppppp',
-  'alaaadinnnn'
+  'aaaaaaaaaaaaaaa',
+  'aaaaaaaaaaaaaaaaaa',
+  'aaaaaaaaaaaa',
+  'qqqqqqqqqqqqq'
 ];
 
 titlesToDelete.forEach(title => {
@@ -18,4 +15,4 @@ titlesToDelete.forEach(title => {
   console.log(`Deleted ${result.changes} meal(s) with title: ${title}`);
 });
 
-console.log('Cleanup complete!');
+console.log('✅ Cleanup complete!');
