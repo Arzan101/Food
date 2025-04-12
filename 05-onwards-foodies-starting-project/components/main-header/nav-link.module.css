@@ -10,6 +10,9 @@
     font-weight: bold;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 1rem;
   }
   
   .link:hover,
@@ -20,3 +23,10 @@
     -webkit-text-fill-color: transparent;
     text-shadow: 0 0 18px rgba(248, 190, 42, 0.8);
   }
+  
+@media (max-width: 600px) {
+  .link {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.75rem;
+  }
+}

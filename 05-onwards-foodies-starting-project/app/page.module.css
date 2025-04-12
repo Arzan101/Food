@@ -2,6 +2,7 @@
     display: flex;
     gap: 3rem;
     margin: 3rem auto;
+    flex-direction: column;
     width: 90%;
     max-width: 75rem;
   }
@@ -72,4 +73,37 @@
     width: 90%;
     margin: 2rem auto;
     text-align: center;
+  }
+  @media (min-width: 768px) {
+    .header {
+      flex-direction: row;
+      gap: 3rem;
+    }
+  }
+  @media (min-width: 768px) {
+    .hero {
+      font-size: 1.5rem;
+      text-align: left;
+    }
+    .slideshow {
+      max-width: 100%;
+      aspect-ratio: 16 / 10;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+    .cta {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  
+    .cta a {
+      width: auto;
+    }
+    .section {
+      font-size: 1.5rem;
+      padding: 0;
+      text-align: center;
+    }
   }

@@ -73,3 +73,23 @@
     background: linear-gradient(90deg, #fd4715, #f9b241);
     box-shadow: 0 0 12px rgba(242, 100, 18, 0.8);
   }
+  
+@media (min-width: 768px) {
+  .headerText h2 {
+    font-size: 1.5rem;
+  }
+
+  .headerText p {
+    font-size: 0.75rem;
+  }
+}
+
+.image {
+  height: 12rem;
+}
+
+@media (min-width: 768px) {
+  .image {
+    height: 15rem;
+  }
+}

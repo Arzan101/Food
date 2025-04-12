@@ -1,5 +1,7 @@
 .controls {
     display: flex;
+    flex-direction: column;
+    /* align-items: stretch; */
     align-items: flex-start;
     gap: 1.5rem;
     margin-bottom: 1rem;
@@ -42,4 +44,18 @@
   
   .preview img {
     object-fit: cover;
+  }
+  @media (min-width: 600px) {
+    .controls {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 1.5rem;
+    }
+  }
+  
+  .preview {
+    width: 100%;
+    max-width: 10rem;
+    height: auto;
+    aspect-ratio: 1 / 1;
   }
